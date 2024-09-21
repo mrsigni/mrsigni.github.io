@@ -225,6 +225,15 @@ header {
     margin-bottom: 20px
 }
 
+.panel2 {
+    display: block;
+    box-sizing: border-box;
+    padding: 15px;
+    background: #32a893;
+    box-shadow: 0 1px 52px 0 rgb(0 0 0/5%);
+    margin-bottom: 20px
+}
+
 .panel-hd {
     display: flex;
     padding-bottom: .5rem;
