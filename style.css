@@ -1,0 +1,2389 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: 400
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+q:before,
+q:after {
+    content: ""
+}
+
+abbr,
+acronym {
+    border: 0
+}
+
+a {
+    text-decoration: none;
+    color: #bf303f;
+}
+
+body {
+    background: #f1f1f1;
+    font-size: 14px;
+    font-family: è‹¹æ–¹, pingfang, \82f9\65b9, å¾®è½¯é›…é»‘, microsoft yahei, xingothic-sinaweibo, helvetica, arial, sans-serif
+}
+
+header {
+    background: #fff
+}
+
+.container {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0
+}
+
+.header-top {
+    padding-top: 20px;
+    padding-bottom: 15px
+}
+
+.logo {
+    height: 56px
+}
+
+.logo img {
+    height: 56px
+}
+
+.navigation {
+    background: #bf303f;
+    height: 48px;
+    line-height: 48px
+}
+
+.main-menu .menu-item {
+    float: left;
+
+    text-align: center
+}
+
+.main-menu .menu-item a {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    padding:0 10px;
+
+}
+
+.main-menu .menu-item.active a {
+    color: #fff
+}
+
+.main-menu .menu-item:hover a {
+    color: #fff
+}
+
+.sub-menu {
+    padding-left: 25px
+}
+
+.sub-menu li {
+    float: left;
+    margin-right: 15px
+}
+
+.dflex {
+    display: flex
+}
+
+.flex1 {
+    flex: 1
+}
+
+.flex2 {
+    flex: 2
+}
+
+.fl {
+    float: left;
+    width: 866px
+}
+
+.fr {
+    float: right;
+    width: 340px
+}
+
+.pt15 {
+    padding-top: 1rem
+}
+
+.pb15 {
+    padding-bottom: 1rem
+}
+
+.pr15 {
+    padding-right: 1rem
+}
+
+.mt15 {
+    margin-top: 1rem
+}
+
+.mb15 {
+    margin-bottom: 1rem
+}
+
+.mb10 {
+    margin-bottom: 10px !important
+}
+
+.mr15 {
+    margin-right: 1rem
+}
+
+.ml15 {
+    margin-left: 1rem
+}
+
+.hdt {
+    flex: 1;
+    font-size: 1.2rem;
+    font-weight: 700
+}
+
+.panel {
+    display: block;
+    box-sizing: border-box;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 1px 52px 0 rgb(0 0 0/5%);
+    margin-bottom: 20px
+}
+
+.panel-hd {
+    display: flex;
+    padding-bottom: .5rem;
+    border-bottom: solid 1px #d3d3d3;
+    height: 30px
+}
+
+.panel-hd .zhedie img {
+    width: 26px;
+    height: 26px;
+    transform: rotate(180deg)
+}
+
+.panel-hd .zhankai img {
+    width: 26px;
+    height: 26px
+}
+
+.zb-zzk-list {
+    padding-top: 15px
+}
+
+.zb-zzk-list li {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px
+}
+
+.zb-zzk-list li a {
+    display: inline-block;
+    color: #bf303f;
+    padding: 2px 10px;
+    background: #dedede;
+    border-radius: 5px
+}
+
+.zb-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.4rem;
+    height: 1.4rem
+}
+
+.zb-info {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    border-bottom: solid 1px #efefef
+}
+
+.zb-info p {
+    display: block;
+    padding-right: 1rem
+}
+
+.zb-info div {
+    display: flex;
+    align-items: center
+}
+
+.zb-icon {
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.zb-qiudui {
+    display: flex !important;
+    justify-content: center;
+    padding-left: 15px
+}
+
+.zb-qiudui img {
+    border-radius: 100%
+}
+
+.zb-qiudui .hteam {
+    display: inline-block;
+    width: 170px;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.zb-qiudui .vteam {
+    display: inline-block;
+    width: 170px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.zb-qiudui .hteam img {
+    padding-left: 5px
+}
+
+.zb-qiudui .bf {
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    padding: 0 15px
+}
+
+.zb-qiudui .vteam img {
+    padding-right: 5px
+}
+
+.zb-qiudui img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.8rem;
+    height: 1.8rem
+}
+
+.zb-type {
+    width: 100px;
+    padding-left: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.zb-time,
+.zb-type {
+    color: #959595
+}
+
+.zb-type a {
+    color: #959595
+}
+
+.zb-type2 {
+    color: #666
+}
+
+.zb-type2 a {
+    color: #666
+}
+
+.zb-type3 {
+    color: #000000;
+}
+
+.zb-type3 a {
+    color: #000000
+}
+
+.zb-area {
+    text-align: center
+}
+
+.zb-area_btn {
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    padding: .4rem;
+    display: inline-block;
+    border: solid 1px #bf303f;
+    color: #bf303f
+}
+
+.zb-area_btn.start {
+    background: #bf303f;
+    color: #f1f1f1
+}
+
+.zb-list li:hover {
+    background: #efefef
+}
+
+.shrink {
+    height: 320px;
+    overflow: hidden
+}
+
+.news-list {
+    padding: 5px 0
+}
+
+.news-list li {
+    padding: 5px 0
+}
+
+.news-list li a {
+    display: flex;
+    color: #000
+}
+
+.news-list li a:hover {
+    color: #959595
+}
+
+.news-list li a img {
+    display: inline-block;
+    min-width: 62px;
+    min-height: 46px;
+    max-width: 62px;
+    max-height: 46px
+}
+
+.news-list li a span {
+    display: inline-block;
+    padding-left: 10px
+}
+
+.news-list.clamp2 li a span {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+
+.news-list.text-overflow li a {
+    width: calc(99% - 4px);
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.news-list.text-overflow li a {
+    display: inline-block
+}
+
+.news-list.text-overflow li a span {
+    padding-right: 5px;
+    color: #959595
+}
+
+.hot-match-list {
+    display: flex
+}
+
+.hot-match-item {
+    flex: 1
+}
+
+.hot-match-container h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px
+}
+
+.hot-match-item {
+    background: #bf303f;
+    box-sizing: border-box;
+    padding: 10px 14px
+}
+
+.hot-match-item:not(:last-child) {
+    margin-right: 15px
+}
+
+.hot-match-item a {
+    color: #fff
+}
+
+.hot-match-item .match-info {
+    display: flex;
+    margin-bottom: 15px
+}
+
+.hot-match-item .match-info h4 {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.hot-match-item .match-info p {
+    font-size: 12px
+}
+
+.hot-match-item .match-team {
+    display: flex;
+    margin-bottom: 15px;
+    text-align: center;
+    justify-content: space-around
+}
+
+.hot-match-item .match-score {
+    display: flex;
+    margin-bottom: 5px;
+    text-align: center;
+    justify-content: space-around
+}
+
+.footer {
+    padding: 25px;
+    background: #000;
+    text-align: center;
+    margin: 15px 0 0;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.footer .flinks {
+    text-align: left; /* 设置 flinks 类内文本左对齐 */
+}
+
+.footer .flinks a {
+    color: #ffffff;
+}
+
+.breadcrumb {
+    font-size: .8rem;
+    margin: 0;
+    padding: 0
+}
+
+.breadcrumb>li {
+    float: left;
+    position: relative
+}
+
+.breadcrumb>li>a,
+.breadcrumb>li.active,
+.breadcrumb>li.active>a {
+    font-size: 14px;
+    line-height: 39px;
+    color: #000 !important;
+    font-weight: 700;
+    padding-right: 15px
+}
+
+.breadcrumb>li:after {
+    border-left: solid 5px #bf303f;
+    border-top: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 14px;
+    right: 5px
+}
+
+.zhibo_head {
+    padding: 15px
+}
+
+.match_info_head {
+    height: 21px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #bf303f;
+    margin-bottom: 5px
+}
+
+.fixed_score_box.zuqiu {
+    background-image: url(zuqiu_info_banner.png)
+}
+
+.fixed_score_box {
+    width: 100%;
+    height: 200px;
+    background-size: auto;
+    overflow: hidden;
+    background-position: bottom;
+    background-repeat: no-repeat
+}
+
+.fixed_score_top {
+    width: 650px;
+    height: 120px;
+    margin: 40px auto 0
+}
+
+.score_name_left {
+    width: 140px;
+    height: 120px;
+    float: left;
+    text-align: center
+}
+
+.score_name_left>img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    border-radius: 50px
+}
+
+.score_name_left>h1 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 35px
+}
+
+.score_name {
+    width: 370px;
+    float: left;
+    margin-top: -30px
+}
+
+.score_name p:nth-child(1) {
+    margin-top: 27px
+}
+
+.score_name p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center
+}
+
+.score_name_right {
+    float: right
+}
+
+.score_name_left {
+    width: 140px;
+    height: 120px;
+    float: left;
+    text-align: center
+}
+
+.score_name span {
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center
+}
+
+.score_name .match_info_btn {
+    width: 140px;
+    cursor: default;
+    color: #fff;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 auto
+}
+
+.score_name .match_red_btn {
+    color: #ff007b
+}
+
+.fixed_score_taggle>span {
+    display: block;
+    font-size: 18px;
+    color: #bf303f;
+    margin-top: 20px;
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    border-left: solid 4px #bf303f;
+    padding-left: 7px
+}
+
+.signalCon_listD>h5 {
+    width: 120px;
+    line-height: 30px;
+    font-size: 16px;
+    overflow: hidden;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #bf303f;
+    border-radius: 100px;
+}
+
+.signalCon_listD>h5>a {
+    color: #fff
+}
+
+
+
+.fixsco_synopsis_nav {
+    padding: 15px;
+    display: flex;
+    justify-content: center
+}
+
+.fixsco_synopsis_nav li.hover {
+    background-color: #ba1c1c
+}
+
+.fixsco_synopsis_nav li:hover {
+    background-color: #ba1c1c !important
+}
+
+.fixsco_synopsis_nav li:hover div {
+    color: #fff
+}
+
+.fixsco_synopsis_nav li {
+    width: 200px;
+    height: 48px;
+    border: 1px solid #ba1c1c;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items: center
+}
+
+.fixsco_synopsis_nav li.hover div {
+    color: #fff
+}
+
+.fixsco_synopsis_nav li div {
+    font: 18px/18px "microsoft yahei";
+    color: #333;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    margin: auto
+}
+
+.fixsco_synopsis_nav li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50px
+}
+
+.fixsco_synopsis_nav li div span {
+    width: 90px
+}
+
+.jijinluxiang a {
+    color: #bf303f
+}
+
+.article-wrap h1 {
+    font-size: 26px
+}
+
+.article-wrap .info {
+    border-bottom: solid 1px #dedede;
+    margin-bottom: 15px;
+    padding-bottom: 15px
+}
+
+.article-wrap .info time {
+    display: inline-block;
+    color: #888;
+    padding-top: 10px
+}
+
+.article {
+    box-sizing: border-box;
+    padding: 15px 0 35px 0
+}
+
+.article p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px
+}
+
+.article img {
+    display: block;
+    margin: 0 auto;
+    width: 60% !important;
+    max-width: 60% !important
+}
+
+
+.prenext span{background:#c35661;color:#Fff;padding:1px 12px;border-radius:4px;margin-right:5px;}
+
+
+
+.saishi-list li {
+    float: left;
+    padding: 10px
+}
+
+.saishi-list li a {
+    color: #bf303f
+}
+
+.team-info {
+    text-align: center;
+    padding-bottom: 15px
+}
+
+.team-info img {
+    width: 120px;
+    height: 120px
+}
+
+.team-desc h4 {
+    font-size: 16px;
+    font-weight: 700
+}
+
+.team-desc .intro {
+    line-height: 1.6;
+    margin-top: 15px
+}
+
+.sub-menu {
+    padding: 15px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.subnav ul li {
+    float: left
+}
+
+.subnav a {
+    color: #bf303f;
+    min-width:70px;
+    white-space: nowrap;
+}
+
+.responsive-table {
+    display: block;
+    width: 100%;
+    margin-top: 15px
+}
+
+.responsive-table_hd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background: #dedede
+}
+
+.responsive-table_hd>span {
+    text-align: center;
+    flex: 1;
+    font-weight: 700
+}
+
+.responsive-table_bd {
+    display: block
+}
+
+.responsive-table_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px #dedede
+}
+
+.responsive-table_row>span {
+    text-align: center;
+    flex: 1;
+    padding: 10px 0
+}
+
+.pglist{padding:15px 0 0px 0px;text-align: center;}
+.pglist li{display: inline-block;padding:0 5px;}
+
+.zb-info-right .zb-time{width:100px}
+.zb-info-right .zb-qiudui{width:calc(100% - 150px);}
+.zb-info-right .zb-area_btn{width:40px}
+.zb-qiudui .vteam{color:#666;}
+
+
+
+
+
+/*è”èµ›ç®€ä»‹*/
+.hot-match-container{display: flex;flex-wrap:wrap;justify-content:space-between}
+.hot-match-container-pic{width:200px;height:200px;display:flex;justify-content:center;align-items:center}
+.hot-match-container-pic img{max-height:100%;max-width:100%}
+.hot-match-container-text{width:calc(100% - 210px);}
+.hot-match-container .hot-match-container-text h2{margin-bottom:6px;color:#bf303f}
+.hot-match-container .hot-match-container-text p{font-size: 13px;color: #666;line-height: 1.5;}
+
+.hot-match-container .hot-match-container-text-qiudui{padding-top:10px;}
+.hot-match-container .hot-match-container-text-qiudui p.team-name{font-size: 16px;color:#bf303f}
+.hot-match-container .hot-match-container-text-qiudui p a{font-size: 14px;background-color:#ada5a6;display: inline-block;color: #fff;padding:0 5px;margin-top:3px}
+.hot-match-container .hot-match-container-text-qiudui p a:hover{background-color:#bf303f;color:#fff}
+
+
+/*å³ä¾§å½•åƒ*/
+.panel-video-list li{width:100%;display:block;padding: 14px 0 0px 0px;}
+.panel-video-list li a{display:flex;width:100%;color: #666;}
+.panel-video-list li a img{margin-right:5px;height:23px;vertical-align:middle}
+.panel-video-list li a p{display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+
+
+
+
+.panel-jifen-list span{display:inline-block;padding: 4px 5px;box-sizing: border-box;}
+.panel-jifen-list .j1{width:50%}
+.panel-jifen-list .j2{width:15%;text-align:center}
+.panel-jifen-list .j3{width:20%;text-align:center}
+.panel-jifen-list .j4{width:15%;text-align:center}
+
+.panel-jifen-list .jifen-tit{background-color:#f8f8f8;}
+
+
+
+
+.panel-jifen-list .jifen-list p{padding:2px 0 0px 0px;}
+
+.panel-jifen-list .jifen-list p .j1 em{background-color:#ccc;border-radius: 4px;width: 24px;height: 24px; line-height:24px; display:inline-block;text-align:center;font-weight:600;color:#fff;margin-right:8px;}
+.panel-jifen-list .jifen-list p:first-child  em{background-color: #f61111;}
+.panel-jifen-list .jifen-list p:nth-child(2) em{background-color: #ff8204;}
+.panel-jifen-list .jifen-list p:nth-child(3) em{background-color: #ffc527;}
+.panel-jifen-list .jifen-list p{color: #666;}
+
+
+
+
+
+
+.panel-jifen-list-ssb .j1{width:50%}
+.panel-jifen-list-ssb .j2{width:35%;text-align:left}
+.panel-jifen-list-ssb .j3{width:15%;text-align:center}
+
+
+
+.match_info{padding:0px;}
+.match_info .match_info_tit{border-bottom: solid 1px #d3d3d3;display:flex;justify-content:space-between;}
+.match_info .match_info_tit span{ cursor:pointer; font-size: 18px;color: #959595;font-weight: 700;border-bottom: solid 3px #fff;flex: 1;text-align: center;line-height:1.8}
+.match_info .match_info_tit span.on{border-bottom: solid 3px #bf303f;color: #bf303f;}
+
+.match_info_item .item.hide{display:none}
+.match_info_item .jfls{padding:10px 0;}
+.match_info_item .jfls p{padding-bottom:10px;}
+.match_info_item .sqfx{padding:10px 0;}
+.match_info_item .sqfx  .mainform{border: solid 1px #d3d3d3;}
+
+.match_info_item .sqfx  .mainform span{line-height:1.2;padding:10px 0}
+.match_info_item .sqfx  .mainform .r1{display: flex;justify-content: space-between;background: #efefef;}
+.match_info_item .sqfx  .mainform .r2{display: flex;justify-content: space-between;border-top: solid 1px #d3d3d3;}
+.match_info_item .sqfx  .mainform .r1 span{width:20%;text-align:center;font-weight:600}
+.match_info_item .sqfx  .mainform .r2 span{width:20%;text-align:center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rank-wrapper .rank-area .rank-bar .sport-option .look-more.hide{display: none;}
+.rank-wrapper {
+    width: 100%;
+
+}
+
+.rank-wrapper .rank-area {
+    width: 100%
+}
+
+.rank-wrapper .rank-area .rank-bar {
+    width: 100%;
+
+    padding: 0 0px 0px 0px
+}
+
+.rank-wrapper .rank-area .rank-bar .sport-option {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.rank-wrapper .rank-area .rank-bar .sport-option .sport {
+    width: 75%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    display: flex;
+    cursor: pointer
+}
+
+.rank-wrapper .rank-area .rank-bar .sport-option .sport .option {
+    display: flex;
+    align-items: center;
+    margin-right: 15px
+}
+
+.rank-wrapper .rank-area .rank-bar .sport-option .sport .option:hover {
+    color: #E74C5B
+}
+
+.rank-wrapper .rank-area .rank-bar .sport-option .sport .active {
+    font-size: 16px;
+    font-weight: 600;
+    color: #e74c5b
+}
+
+.rank-wrapper .rank-area .rank-bar .sport-option .sport .node_active {
+    font-size: 16px;
+    font-weight: 600;
+    color: #e74c5b
+}
+
+.rank-wrapper .rank-area .rank-bar .sport-option .look-more {
+    height: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #e84b5b;
+    line-height: 24px;
+    display: flex
+}
+
+.rank-wrapper .rank-area .rank-bar .sport-option .look-more em {
+    float: left;
+    font-style: normal
+}
+
+.rank-wrapper .rank-area .rank-bar .sport-option .look-more .iconfont {
+    float: left;
+    font-size: 24px
+}
+
+.rank-wrapper .rank-area .rank-bar .football {
+    width: 100%;
+    box-sizing: border-box;
+    display: none
+}
+
+.rank-wrapper .rank-area .rank-bar .football.active {
+    display: block
+}
+
+.rank-wrapper .rank-area .rank-bar .football.node_active {
+    display: block
+}
+
+.rank-wrapper .rank-area .rank-bar .football .competition-option {
+    width: 100%;
+    height: 46px
+}
+
+.rank-wrapper .rank-area .rank-bar .football .competition-option .football-competition {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.rank-wrapper .rank-area .rank-bar .football .competition-option .football-competition .competition {
+    cursor: pointer;
+    width: 44px;
+    height: 26px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 26px;
+    color: #666;
+    border-radius: 2px;
+    overflow:hidden;
+}
+
+.rank-wrapper .rank-area .rank-bar .football .competition-option .football-competition .competition:hover {
+    background: #f3f4f7
+}
+
+.rank-wrapper .rank-area .rank-bar .football .competition-option .football-competition .competition.active {
+    font-weight: 500;
+    background: #e74c5b;
+    color: #fff
+}
+
+.rank-wrapper .rank-area .rank-bar .football .competition-option .football-competition .competition.node_active {
+    font-weight: 500;
+    background: #e74c5b;
+    color: #fff
+}
+
+.rank-wrapper .rank-area .rank-bar .basketball {
+    width: 300px;
+    display: none
+}
+
+.rank-wrapper .rank-area .rank-bar .basketball.active {
+    display: block
+}
+
+.rank-wrapper .rank-area .rank-bar .basketball .competition-option {
+    height: 46px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.rank-wrapper .rank-area .rank-bar .basketball .competition-option .competition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 26px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #666666;
+    cursor: pointer;
+    background: #fff
+}
+
+.rank-wrapper .rank-area .rank-bar .basketball .competition-option .competition:hover {
+    color: #E74C5B
+}
+
+.rank-wrapper .rank-area .rank-bar .basketball .competition-option .competition.active {
+    color: #FFFFFF;
+    background: #e74c5b
+}
+
+.rank-wrapper .rank-area .rank-list {
+    width: 100%;
+    overflow: hidden
+}
+
+.rank-wrapper .rank-area .rank-list .football {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 0px 10px 0px;
+    display: none
+}
+
+.rank-wrapper .rank-area .rank-list .football.active {
+    display: block
+}
+
+.rank-wrapper .rank-area .rank-list .football.node_active {
+    display: block
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .list .item:hover {
+    background-color: #F3F4F7
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .table-head {
+    width: 100%;
+    height: 44px;
+    color: #333;
+    line-height: 44px;
+    font-size: 12px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .table-head .rank-number {
+    margin-left: 1px;
+    margin-right: 1px;
+    float: left
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .table-head .name {
+    margin-right:96px;
+    float: left
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .table-head .result {
+    margin-right: 13px;
+    float: left
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .table-head .match-points {
+    margin-right: 10px;
+    float: left
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .list .item {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f3f4f7
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .list .item .point {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 7px
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .list .item .rank-number {
+    width: 10px;
+    height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 16px;
+    margin-right: 18px
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .list .item .team-name {
+    flex: auto;
+    height: 17px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    display: flex;
+    align-items: center
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .list .item .team-name a {
+    color: #333;
+    display: flex;
+    align-items: center
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .list .item .team-name a .logo {
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .list .item .team-name a .name {
+    height: 17px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 17px
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .list .item .result {
+    width: 56px;
+    height: 17px;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding-right: 10px;
+    text-align: right;
+    font-weight: 400;
+    color: #333;
+    line-height: 17px;
+    margin-right: 12px
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .list .item .result canvas {
+    width: 50px;
+    height: 16px
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .list .item .match-points {
+    width: 30px;
+    height: 17px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #e74c5b;
+    line-height: 17px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .list .item .match-points canvas {
+    width: 30px;
+    height: 16px
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .legend {
+    padding-top: 10px
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .legend>div:first-child {
+    padding-top: 5px
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .legend>div:last-child {
+    padding-bottom: 5px
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .legend .item {
+    background-color: #F7F8FA;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333
+}
+
+.rank-wrapper .rank-area .rank-list .football .competition-rank-table .integral .legend .item .point {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-left: 11px;
+    margin-right: 10px
+}
+
+.rank-wrapper .rank-area .rank-list .basketball {
+    width: 300px;
+    display: none
+}
+
+.rank-wrapper .rank-area .rank-list .basketball.active {
+    display: block
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-category {
+    height: 44px;
+    width: 300px;
+    padding: 0 59px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-category .west.active{
+    font-weight: 600;
+    color: #E74C5B;
+    box-shadow: 0px 1px 0px 0px #e74c5b
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-category .east.active{
+    font-weight: 600;
+    color: #4FB0FF;
+    box-shadow: 0px 1px 0px 0px #4fb0ff
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-category .category {
+    height: 44px;
+    cursor: pointer;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table {
+    width: 100%;
+    padding: 0 0px 10px 0px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .table-head {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    line-height: 44px;
+    font-size: 12px;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .table-head .rank-number {
+    width: 40px;
+    margin-left: 10px
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .table-head .team {
+    width: 77px;
+    margin-left: 10px
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .table-head .win {
+    width: 45px;
+    margin-left: 19px;
+    text-align: center
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .table-head .lose {
+    width: 45px;
+    text-align: center
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .table-head .win-ratio {
+    margin-left: 25px
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .list {
+    width: 100%
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .list .item {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 2px 0 10px;
+    box-sizing: border-box;
+    height: 36px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    border-bottom: 1px solid #f3f4f7
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .list .item .rank-number {
+    width: 20px;
+    height: 20px;
+    background: #BBBBBB;
+    border-radius: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    text-align: center;
+    margin-top: 8px
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .list .item .rank-number.nbatop {
+    background: #E74C5B
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .list .item .rank-number.cbatop {
+    background: #FFA03B
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .list .item .team {
+    width: 97px;
+    float: left;
+    margin-top: 8px
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .list .item .team a {
+    color: #333;
+    display: flex;
+    align-items: center
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .list .item .team a .logo {
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .list .item .team a .name {
+    height: 17px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 17px
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .list .item .win {
+    width: 45px;
+    float: left;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .list .item .lose {
+    width: 45px;
+    float: left;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .list .item .win-ratio {
+    float: right;
+    margin-top: 8px;
+    text-align: right;
+    color: #E74C5B
+}
+
+.rank-wrapper .rank-area .rank-list .basketball .rank-table .list .item canvas {
+    width: 30px;
+    height: 16px
+}
+
+.rank-wrapper .rank-area .rank-list .east .jhs {
+    background-color: #4FB0FF !important
+}
+
+.rank-wrapper .rank-area .rank-list .west .jhs {
+    background-color: #E74C5B !important
+}
+
+.rank-wrapper .rank-area .rank-list .cba-jhs {
+    background-color: #FFA03B !important
+}
+
+
+
+
+
+
+
+
+
+
+.rank-wrapper #shooter.rank-area {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar {
+    width: 100%;
+
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .sport-option {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .sport-option .sport {
+    width: 75%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    display: flex;
+    cursor: pointer
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .sport-option .sport .option {
+    display: flex;
+    align-items: center;
+    margin-right: 15px
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .sport-option .sport .option:hover {
+    color: #E74C5B
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .sport-option .sport .active {
+    font-size: 16px;
+    font-weight: 600;
+    color: #e74c5b
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .sport-option .sport .node_active {
+    font-size: 16px;
+    font-weight: 600;
+    color: #e74c5b
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .sport-option .look-more {
+    min-width: 73px;
+    height: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #e84b5b;
+    line-height: 24px;
+    display: flex
+}
+.rank-wrapper #shooter.rank-area .rank-bar .sport-option .look-more.hide{display:none}
+
+.rank-wrapper #shooter.rank-area .rank-bar .sport-option .look-more em {
+    float: left;
+    font-style: normal
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .sport-option .look-more .iconfont {
+    float: left;
+    font-size: 24px
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .football {
+    width: 100%;
+    box-sizing: border-box;
+    display: none
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .football.active {
+    display: block
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .football.node_active {
+    display: block
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .football .competition-option {
+    width: 100%;
+    height: 46px
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .football .competition-option .football-competition {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .football .competition-option .football-competition .competition {
+    cursor: pointer;
+    width: 44px;
+    height: 26px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 26px;
+    color: #666;
+    border-radius: 2px
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .football .competition-option .football-competition .competition:hover {
+    background: #f3f4f7
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .football .competition-option .football-competition .competition.active {
+    font-weight: 500;
+    background: #e74c5b;
+    color: #fff
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .football .competition-option .football-competition .competition.node_active {
+    font-weight: 500;
+    background: #e74c5b;
+    color: #fff
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .basketball {
+    width: 100%;
+    display: none
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .basketball.active {
+    display: block
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .basketball .competition-option {
+    height: 46px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .basketball .competition-option .competition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 26px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #666666;
+    cursor: pointer;
+    background: #fff
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .basketball .competition-option .competition:hover {
+    color: #E74C5B
+}
+
+.rank-wrapper #shooter.rank-area .rank-bar .basketball .competition-option .competition.active {
+    color: #FFFFFF;
+    background: #e74c5b
+}
+
+.rank-wrapper #shooter.rank-area .rank-list {
+    width: 100%;
+    overflow: visible
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 0px 10px 0px;
+    display: none
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football.active {
+    display: block
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football.node_active {
+    display: block
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .list .item:hover {
+    background-color: #F3F4F7
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .table-head {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    border-bottom: none !important;
+    background-color: #F3F4F7
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .table-head .rank-number {
+    margin-left: 1px;
+    margin-right:1px;
+    float: left
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .table-head .name {
+    margin-right: 110px;
+    float: left
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .table-head .result {
+    margin-right: 20px;
+    float: left
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .table-head .match-points {
+    margin-right: 10px;
+    float: left
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f3f4f7
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item .point {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 7px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item .rank-number {
+    width: 10px;
+    height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 16px;
+    margin-right: 18px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item .team-name1 {
+    flex: auto;
+    height: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    position: relative
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item .team-name1 a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    flex: 0;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item .team-name1 a .logo {
+    flex: none;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+    object-fit: contain;
+    object-position: center
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item .team-name1 a .tooltips {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 5px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item .team-name1 a .tooltips .tooltip-arrow {
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    left: -4px;
+    top: 50%;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #000
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item .team-name1 a .tooltips .tooltip-inner {
+    max-width: 200px;
+    white-space: nowrap;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 4px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item .team-name1 a .tooltips {
+    flex: none;
+    width: 0;
+    overflow: hidden
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item .team-name1 a .name-span {
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 100px;
+    overflow: hidden
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item .team-name1 a:hover .tooltips {
+    width: auto
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item .result1 {
+    height: 17px;
+    width: 44px;
+    font-size: 12px;
+    box-sizing: border-box;
+    text-align: right;
+    font-weight: 400;
+    color: #333;
+    line-height: 17px;
+    text-align: center
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item .result1 .logo {
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+    object-fit: contain;
+    object-position: center
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .list .item .match-points1 {
+    width: 44px;
+    height: 17px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #e74c5b;
+    line-height: 17px;
+    text-align: center
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .legend {
+    padding-top: 10px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .legend>div:first-child {
+    padding-top: 5px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .legend>div:last-child {
+    padding-bottom: 5px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .legend .item {
+    background-color: #F7F8FA;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .football .competition-rank-table .integral .legend .item .point {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-left: 11px;
+    margin-right: 10px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball {
+    width: 300px;
+    display: none;
+    box-sizing: border-box;
+    padding: 0px 0px 10px 0px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball.active {
+    display: block
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-category {
+    height: 44px;
+    width: 300px;
+    padding: 0 59px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-category.west div:nth-child(2) {
+    font-weight: 600;
+    color: #E74C5B;
+    box-shadow: 0px 1px 0px 0px #e74c5b
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-category.east div:nth-child(1) {
+    font-weight: 600;
+    color: #4FB0FF;
+    box-shadow: 0px 1px 0px 0px #4fb0ff
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-category .category {
+    height: 44px;
+    cursor: pointer;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table {
+    width: 300px;
+    padding: 0 10px 10px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .table-head {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    line-height: 44px;
+    font-size: 12px;
+    border-radius: 2px;
+    color: #333;
+    background-color: #f3f4f7;
+    border-bottom: none !important
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .table-head .rank-number {
+    width: 40px;
+    margin-left: 10px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .table-head .team {
+    width: 77px;
+    margin-left: 10px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .table-head .win {
+    width: 30px;
+    margin-left: 19px;
+    text-align: center
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .table-head .lose {
+    width: 45px;
+    text-align: center
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .table-head .win-ratio {
+    margin-left: 20px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .list {
+    width: 100%
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .list .item {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 2px 0 10px;
+    box-sizing: border-box;
+    height: 36px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    border-bottom: 1px solid #f3f4f7
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .list .item .rank-number {
+    width: 20px;
+    height: 20px;
+    background: #BBBBBB;
+    border-radius: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    text-align: center;
+    margin-top: 8px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .list .item .rank-number.nbatop {
+    background: #E74C5B
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .list .item .rank-number.cbatop {
+    background: #FFA03B
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .list .item .team {
+    width: 97px;
+    float: left;
+    margin-top: 8px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .list .item .team a {
+    color: #333
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .list .item .win {
+    width: 36px;
+    float: left;
+    margin-top: 8px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .list .item .lose {
+    width: 24px;
+    float: left;
+    margin-top: 8px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .rank-table .list .item .win-ratio {
+    float: right;
+    margin-top: 8px;
+    text-align: right;
+    color: #E74C5B
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .table-head {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    border-bottom: none !important;
+    background-color: #F3F4F7
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .table-head .rank-number {
+    margin-left: 10px;
+    margin-right: 30px;
+    float: left
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .table-head .name {
+    margin-right: 114px;
+    float: left
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .table-head .result {
+    margin-right: 20px;
+    float: left
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .table-head .match-points {
+    margin-right: 10px;
+    float: left
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f3f4f7
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item .point {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 7px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item .rank-number {
+    width: 10px;
+    height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 16px;
+    margin-right: 18px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item .team-name1 {
+    flex: auto;
+    height: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    position: relative
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item .team-name1 a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    flex: 0;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item .team-name1 a .logo {
+    flex: none;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+    object-fit: contain;
+    object-position: center
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item .team-name1 a .tooltips {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 5px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item .team-name1 a .tooltips .tooltip-arrow {
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    left: -4px;
+    top: 50%;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #000
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item .team-name1 a .tooltips .tooltip-inner {
+    max-width: 200px;
+    white-space: nowrap;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 4px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item .team-name1 a .tooltips {
+    flex: none;
+    width: 0;
+    overflow: hidden
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item .team-name1 a .name-span {
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 100px;
+    overflow: hidden
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item .team-name1 a:hover .tooltips {
+    width: auto
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item .result1 {
+    height: 17px;
+    width: 44px;
+    font-size: 12px;
+    box-sizing: border-box;
+    text-align: right;
+    font-weight: 400;
+    color: #333;
+    line-height: 17px;
+    text-align: center
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item .result1 .logo {
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+    object-fit: contain;
+    object-position: center
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .list .item .match-points1 {
+    width: 44px;
+    height: 17px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #e74c5b;
+    line-height: 17px;
+    text-align: center
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .legend {
+    padding-top: 10px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .legend>div:first-child {
+    padding-top: 5px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .legend>div:last-child {
+    padding-bottom: 5px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .legend .item {
+    background-color: #F7F8FA;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .basketball .integral .legend .item .point {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-left: 11px;
+    margin-right: 10px
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .east .jhs {
+    background-color: #4FB0FF !important
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .west .jhs {
+    background-color: #E74C5B !important
+}
+
+.rank-wrapper #shooter.rank-area .rank-list .cba-jhs {
+    background-color: #FFA03B !important
+}
+
+.rank-wrapper #shooter.rank-area canvas {
+    width: 40px;
+    height: 16px
+}
+
+
+
+
+.match_filter {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+}
+
+.match_filter::after {
+    clear:both;content:'';display:block;width:0;height:0;visibility:hidden;
+}
+.match_filter li {
+    float: left;
+    padding: 5px 10px;
+    background: #FFF;
+    border: solid 1px #DEDEDE;
+    margin-right: 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    margin: 5px 10px 5px 0px;
+}
+.match_filter li a{color:#666;}
+
+
+
+.match_filter li.active {
+    border: solid 1px #bf303f;
+}
+.match_filter li.active a {
+    color: #bf303f;
+}
+.match_filter li a i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px -2px 0;
+}
+.icon-zhongyao {
+    background: url(sprite.png) -256px 0;
+}
+.icon-zuqiu {
+    background: url(sprite.png) 0 0;
+}
+.icon-lanqiu {
+    background: url(sprite.png) -32px 0;
+}
+
+/* 初始隐藏子类 */
+.menu-item .submenu {
+    position: absolute;display: none;background: #45464C;width: 100%;z-index: 999
+}
+
+/* 鼠标悬停时显示子类 */
+.menu-item:hover .submenu {
+    display: block !important;
+}
+
+
+.menu-item .submenu{position: absolute;display: none;background: #45464C; width: 100px;z-index: 999}
+.menu-item .submenu li a{line-height: 40px;font-size: 14px;}
+.menu-item .submenu li a:hover{background:#d3a403;color: #fff}
+.menu-item:hover .submenu{display: block;}
+
+.zhibo_btn a{
+    background: #bf303f;
+    color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0px 15px;
+    line-height: 43px;
+    font-size: 16px;
+    margin:0px 5px 10px 0;
+    display: inline-block;
+    text-indent: 0;
+}
+
+/* sitemap_box */
+.sitemap_box {margin-bottom: 30px;background: #FFFFFF;margin-top: 30px}
+.sitemap_box_hd {font-size: 20px;font-weight: 600;box-sizing: border-box;padding-left: 20px;line-height: 40px;background: #dedede;position: relative;}
+.sitemap_box_bd {padding: 15px}
+.sitemap_box_bd a {margin: 0 20px;color: #007744;line-height: 34px;display: inline-block;min-width: 110px;}
+/* end sitemap_box */
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000; /* Optional: background color for when video is loading */
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
