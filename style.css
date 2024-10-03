@@ -588,7 +588,7 @@ header {
 }
 
 .fixed_score_box.zuqiu {
-    background-image: url(zuqiu_info_banner.png)
+    background-color : white;
 }
 
 .fixed_score_box {
@@ -639,7 +639,7 @@ header {
 
 .score_name p {
     font-size: 20px;
-    color: #fff;
+    color: #000;
     margin-top: 10px;
     text-align: center
 }
@@ -661,7 +661,7 @@ header {
     display: block;
     font-size: 32px;
     font-weight: 700;
-    color: #fff;
+    color: #000;
     text-align: center
 }
 
