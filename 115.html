@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Iframe</title>
+  <style>
+    /* Responsive iframe container */
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    }
+
+    /* Responsive iframe */
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+     .responsive-iframe {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 0;
+
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+
+  }
+
+  .responsive-iframe iframe {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    border: 0;
+
+  }
+  </style>
+</head>
+<body>
+
+  <div class="responsive-iframe" id="iframe-container">
+
+  <iframe referrerpolicy="no-referrer" crossorigin="anonymous" allow="autoplay" allow="encrypted-media" allowfullscreen="true" allowtransparency="yes" allowvr="true" frameborder="0" id="channel-iframe" marginheight="0" marginwidth="0" mozallowfullscreen="true" rel="noopener nofollow noindex noreferrer" sandbox="allow-same-origin allow-scripts disallow-popups" scrolling="no" src="https://supertipzz.online/tip/16.php" webkitallowfullscreen="true" width="100%"></iframe>
+
+<script>
+
+    const iframe = document.getElementById('channel-iframe');
+
+    // Fungsi untuk mengubah orientasi layar saat masuk ke mode fullscreen
+
+    function handleFullscreenChange() {
+
+        if (document.fullscreenElement === iframe) {
+
+            // Masuk ke mode fullscreen, ubah orientasi layar ke landscape
+
+            if (screen.orientation && screen.orientation.lock) {
+
+                screen.orientation.lock('landscape').catch((error) => {
+
+                    console.error("Tidak bisa mengunci orientasi layar:", error);
+
+                });
+
+            }
+
+        } else {
+
+            // Keluar dari mode fullscreen, kembalikan orientasi ke mode semula
+
+            if (screen.orientation && screen.orientation.unlock) {
+
+                screen.orientation.unlock();
+
+            }
+
+        }
+
+    }
+
+    // Memantau perubahan mode fullscreen pada dokumen
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+
+    // Meminta iframe untuk masuk ke mode fullscreen saat di-klik
+
+    iframe.addEventListener('click', () => {
+
+        if (iframe.requestFullscreen) {
+
+            iframe.requestFullscreen();
+
+        } else if (iframe.webkitRequestFullscreen) { // Untuk Safari
+
+            iframe.webkitRequestFullscreen();
+
+        }
+
+    });
+
+</script>
+
+<script>
+
+const iframe = document.getElementById('channel-iframe');
+
+iframe.onload = function() {
+
+    // Disable certain functions in the iframe's context
+
+    iframe.contentWindow.someFunction = null;
+
+};
+
+</script>
+</body>
+</html>
