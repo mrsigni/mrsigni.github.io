@@ -2,52 +2,27 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <title>Streaming Player Fullscreen</title>
+  <title>Embed Sport TV 4 Fullscreen</title>
   <style>
     html, body {
-      margin: 0; padding: 0; height: 100%; background: black;
-      overflow: hidden;
+      margin: 0; padding: 0; height: 100%; overflow: hidden;
+      background: black;
     }
-    video {
+    iframe {
+      position: fixed;
+      top: 0; left: 0;
       width: 100vw;
       height: 100vh;
-      object-fit: cover;
-      background: black;
+      border: none;
+      margin: 0; padding: 0;
+      overflow: hidden;
+      z-index: 9999;
     }
   </style>
 </head>
 <body>
 
-  <video id="videoPlayer" controls autoplay muted playsinline>
-    <source src="https://sportzonline.si/channels/pt/sporttv4.php" type="video/mp4" />
-    Browser kamu tidak mendukung video HTML5.
-  </video>
-
-  <script>
-    const video = document.getElementById('videoPlayer');
-
-    // Fungsi minta fullscreen (cross-browser)
-    function requestFullscreen(element) {
-      if (element.requestFullscreen) {
-        element.requestFullscreen();
-      } else if (element.mozRequestFullScreen) { /* Firefox */
-        element.mozRequestFullScreen();
-      } else if (element.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-        element.webkitRequestFullscreen();
-      } else if (element.msRequestFullscreen) { /* IE/Edge */
-        element.msRequestFullscreen();
-      }
-    }
-
-    // Otomatis fullscreen saat video siap
-    video.addEventListener('canplay', () => {
-      requestFullscreen(video);
-      video.play();
-    });
-
-    // Supaya bisa autoplay tanpa suara
-    video.muted = true;
-  </script>
+  <iframe src="https://sportzonline.si/channels/pt/sporttv4.php" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
 
 </body>
 </html>
