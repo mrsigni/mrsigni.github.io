@@ -54,6 +54,9 @@
                 class="video-js vjs-default-skin"
                 controls
                 preload="auto"
+                autoplay
+                muted
+                playsinline
                 data-setup='{}'>
                 <p class="vjs-no-js">
                     Untuk menonton video ini, silakan 
@@ -77,7 +80,7 @@
 
     <script>
         // URL M3U8 stream
-        const streamUrl = 'https://edg00.smytdryt.live/161226165_channel2/playlist.m3u8?match_id=12701954&s_id=1&t_id=1485&stats=statssport.inplaynet.tech&timestamp=1748002295&key=VTJGc2RHVmtYMS93NVBKNEtSL0loZGppbm1ocnU0MVZKcHdCTmY5YVhJaGkreHFvRXpqZDM0enBNdjVTTGJ0bk50MVQ3WWt5OWJGbnp5RmF6emJKNytSOEF0NnFoMVlDN1JGb0FjZmpzRkFPV0U1Ky84NlF4VzVYL0hUdUYvZWFNSXhCTXlhdldqWGxWTXdreUVVY2d4VEFlTFBHY0c5ZEwvVTJWak5ScDZidGtReDQvUHk5L1FBOEVJRGFpWFpP';
+        const streamUrl = 'https://edg00.smytdryt.live/161226165_channel2/playlist.m3u8?match_id=12701954&s_id=1&t_id=1485&stats=statssport.inplaynet.tech&timestamp=1748002966&key=VTJGc2RHVmtYMS84Z01GcUg3Mkt2Y2lmK3M0cjZLaUhQRm9IdDBMOVVqMjBWdVVRTVdEQ3VGRXpRTFFkU3hPNkpkVmFPR2ZBckZQTDVxS0JORU5TUGMzK3BxdTA4YmZ4YUtLeE41QVBZUUZKY2xFajk5dm00NjJqbmFWQ2pUQThuTm5oYmZYOG9obU5KMHJiNUlFQjhLMlcwSmVNT1lVM0VmaERlRklpdDBrWHN5UWdPZUFJS3g5T2l6YnBwNHUw';
         
         // Inisialisasi Video.js player
         let player;
@@ -88,6 +91,8 @@
                 fluid: true,
                 responsive: true,
                 liveui: true,
+                autoplay: 'muted',
+                muted: true,
                 html5: {
                     hls: {
                         enableLowInitialPlaylist: true,
@@ -104,6 +109,15 @@
                     src: streamUrl,
                     type: 'application/x-mpegURL'
                 });
+                
+                // Auto-play dengan delay
+                setTimeout(function() {
+                    player.play().then(function() {
+                        console.log('Auto-play berhasil');
+                    }).catch(function(error) {
+                        console.log('Auto-play gagal, memerlukan interaksi user:', error);
+                    });
+                }, 1000);
                 
                 // Event listener untuk error
                 player.on('error', function() {
