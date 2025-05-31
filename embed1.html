@@ -21,12 +21,14 @@
         .container {
             width: 100vw;
             height: 100vh;
+            position: relative;
         }
         
         .video-container {
             width: 100%;
             height: 100%;
             background: #000;
+            position: relative;
         }
         
         .video-js {
@@ -34,7 +36,32 @@
             height: 100% !important;
         }
         
-
+        .error-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            display: none;
+            z-index: 1000;
+        }
+        
+        .retry-btn {
+            background: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .retry-btn:hover {
+            background: #e55a00;
+        }
         
         @media (max-width: 768px) {
             .video-js {
@@ -46,8 +73,6 @@
 </head>
 <body>
     <div class="container">
-       
-        
         <div class="video-container">
             <video
                 id="live-player"
@@ -57,6 +82,7 @@
                 autoplay
                 muted
                 playsinline
+                crossorigin="anonymous"
                 data-setup='{}'>
                 <p class="vjs-no-js">
                     Untuk menonton video ini, silakan 
@@ -68,9 +94,13 @@
                     </a>.
                 </p>
             </video>
+            
+            <div class="error-message" id="error-message">
+                <h3>Koneksi Terputus</h3>
+                <p>Sedang mencoba menghubungkan kembali...</p>
+                <button class="retry-btn" onclick="retryConnection()">Coba Lagi</button>
+            </div>
         </div>
-        
-
     </div>
 
     <!-- Video.js JavaScript -->
@@ -80,31 +110,97 @@
 
     <script>
         // URL M3U8 stream
-        const streamUrl = 'https://fhlsport121.fhs36f7.xyz/token-cBB%2Bm7DFfKeG6TQskfY6yG6KlMDSjX3jbyP%2FxaBOGWKn4bXKHUFdDoIrrBVMVE5JBCeIxTNhkA%3D%3Da/cfall/s2001/v3b/04679678nUE0pQbiY3AaYKEmqwphZ3umqT0ho25y/super/3x_604335.m3u8';
+        const streamUrl = 'https://bf.jabflive.cc/live/322672_hd01.m3u8?txSecret=0183409f956c381ce8a56973bc5876bb&txTime=683b10a7';
         
         // Inisialisasi Video.js player
         let player;
+        let retryCount = 0;
+        const maxRetries = 5;
         
-        // Inisialisasi player saat halaman dimuat
-        document.addEventListener('DOMContentLoaded', function() {
+        // Fungsi untuk menampilkan/menyembunyikan pesan error
+        function showError(show) {
+            const errorMessage = document.getElementById('error-message');
+            errorMessage.style.display = show ? 'block' : 'none';
+        }
+        
+        // Fungsi retry koneksi
+        function retryConnection() {
+            if (retryCount < maxRetries) {
+                retryCount++;
+                console.log(`Mencoba koneksi ulang (${retryCount}/${maxRetries})`);
+                showError(false);
+                initializePlayer();
+            } else {
+                console.log('Maksimal retry tercapai');
+                document.querySelector('.error-message p').textContent = 'Tidak dapat terhubung ke server streaming.';
+            }
+        }
+        
+        // Fungsi untuk inisialisasi player
+        function initializePlayer() {
+            // Dispose player lama jika ada
+            if (player) {
+                player.dispose();
+            }
+            
             player = videojs('live-player', {
                 fluid: true,
                 responsive: true,
                 liveui: true,
                 autoplay: 'muted',
                 muted: true,
+                preload: 'auto',
                 html5: {
                     hls: {
                         enableLowInitialPlaylist: true,
                         smoothQualityChange: true,
-                        overrideNative: true
-                    }
-                }
+                        overrideNative: true,
+                        withCredentials: false,
+                        handleManifestRedirects: true,
+                        // Pengaturan khusus untuk TS segments
+                        bandwidth: 4194304,
+                        enableLowInitialPlaylist: true,
+                        smoothQualityChange: true,
+                        useBandwidthFromLocalStorage: true,
+                        // Buffer settings untuk stabilitas
+                        maxBufferLength: 30,
+                        maxMaxBufferLength: 600,
+                        maxBufferSize: 60 * 1000 * 1000,
+                        maxBufferHole: 0.5
+                    },
+                    // Pengaturan native HTML5 untuk format lain
+                    nativeVideoTracks: false,
+                    nativeAudioTracks: false,
+                    nativeTextTracks: false
+                },
+                // Pengaturuan untuk berbagai format
+                techOrder: ['html5', 'flash'],
+                sources: [{
+                    src: streamUrl,
+                    type: 'application/x-mpegURL'  // M3U8/HLS
+                }, {
+                    src: streamUrl,
+                    type: 'video/mp2t'  // TS format
+                }, {
+                    src: streamUrl,
+                    type: 'video/mp4'   // MP4 fallback
+                }]
             });
             
             // Set source setelah player siap
             player.ready(function() {
                 console.log('Video.js player siap');
+                
+                // Dukung berbagai format
+                const supportedTypes = [
+                    'application/x-mpegURL',
+                    'application/vnd.apple.mpegurl',
+                    'video/mp2t',
+                    'video/mp4',
+                    'video/webm',
+                    'video/ogg'
+                ];
+                
                 player.src({
                     src: streamUrl,
                     type: 'application/x-mpegURL'
@@ -114,17 +210,94 @@
                 setTimeout(function() {
                     player.play().then(function() {
                         console.log('Auto-play berhasil');
+                        retryCount = 0; // Reset retry count pada sukses
+                        showError(false);
                     }).catch(function(error) {
                         console.log('Auto-play gagal, memerlukan interaksi user:', error);
                     });
                 }, 1000);
-                
-                // Event listener untuk error
-                player.on('error', function() {
-                    const error = player.error();
-                    console.error('Player error:', error);
-                });
             });
+            
+            // Event listener untuk berbagai kondisi
+            player.on('error', function() {
+                const error = player.error();
+                console.error('Player error:', error);
+                
+                if (error && error.code) {
+                    console.error('Error code:', error.code);
+                    console.error('Error message:', error.message);
+                    
+                    // Auto retry untuk beberapa jenis error
+                    if (error.code === 2 || error.code === 4) { // Network atau decode error
+                        setTimeout(function() {
+                            retryConnection();
+                        }, 3000);
+                    }
+                }
+                
+                showError(true);
+            });
+            
+            // Event listener untuk loading
+            player.on('loadstart', function() {
+                console.log('Mulai loading stream');
+            });
+            
+            player.on('canplay', function() {
+                console.log('Stream siap diputar');
+                showError(false);
+            });
+            
+            player.on('waiting', function() {
+                console.log('Buffering...');
+            });
+            
+            player.on('playing', function() {
+                console.log('Stream sedang diputar');
+                showError(false);
+            });
+            
+            // Handle koneksi terputus
+            player.on('suspend', function() {
+                console.log('Koneksi suspended');
+                showError(true);
+            });
+            
+            player.on('stalled', function() {
+                console.log('Stream stalled');
+                showError(true);
+            });
+        }
+        
+        // Inisialisasi player saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', function() {
+            initializePlayer();
+        });
+        
+        // Handle visibility change untuk pause/resume
+        document.addEventListener('visibilitychange', function() {
+            if (player) {
+                if (document.hidden) {
+                    // Tab tidak aktif, pause untuk menghemat bandwidth
+                    if (!player.paused()) {
+                        player.pause();
+                    }
+                } else {
+                    // Tab aktif kembali, resume
+                    if (player.paused()) {
+                        player.play().catch(function(error) {
+                            console.log('Resume play error:', error);
+                        });
+                    }
+                }
+            }
+        });
+        
+        // Handle resize window
+        window.addEventListener('resize', function() {
+            if (player) {
+                player.fluid(true);
+            }
         });
     </script>
 </body>
