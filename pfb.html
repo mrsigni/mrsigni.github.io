@@ -10,10 +10,15 @@
     <meta property="og:image" content="https://radarindramayu.disway.id/upload/8880f469970192c71ec4d34096421754.jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:url" content="https://suriatv.com/berita-terkini" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="SURIATV.COM" />
     <meta property="fb:app_id" content="123456789" />
+    
+    <!-- Alternative untuk memastikan format horizontal -->
+    <meta property="og:image:secure_url" content="https://radarindramayu.disway.id/upload/8880f469970192c71ec4d34096421754.jpeg" />
+    <meta name="thumbnail" content="https://radarindramayu.disway.id/upload/8880f469970192c71ec4d34096421754.jpeg" />
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -149,7 +154,7 @@
         </div>
         
         <div class="facebook-preview">
-            <img src="https://radarindramayu.disway.id/upload/8880f469970192c71ec4d34096421754.jpeg" alt="Preview Image" style="width: 100%; height: auto; display: block;">
+            <img src="https://radarindramayu.disway.id/upload/8880f469970192c71ec4d34096421754.jpeg" alt="Preview Image" style="width: 100%; height: 250px; object-fit: cover; object-position: center;">
             <div class="preview-header">
                 <div class="preview-title">"Saya dah cuba tapi" Akhirnya Bekas suami Dedah Punca Sbnar Ceraikan Mas Idayu ke...</div>
                 <div class="preview-description">"Ya.. Kmi sah brcerai pda 2 bulan lalu.."- Allahu akhirnya Bekas suami akhirnya dedah punca ceraik Mas Idayu. 😭... Lihat Lagi</div>
@@ -177,8 +182,14 @@
         </div>
         
         <div style="margin-top: 30px; padding: 20px; background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 6px;">
-            <h4 style="color: #155724; margin-top: 0;">✅ Gambar Sudah Diperbaiki:</h4>
-            <p style="color: #155724; margin-bottom: 0;">Preview thumbnail sekarang akan ditampilkan penuh tanpa terpotong (menggunakan height: auto) dan dibatasi lebar maksimum 500px agar sesuai dengan format Facebook preview yang sebenar.</p>
+            <h4 style="color: #155724; margin-top: 0;">✅ Preview Format Horizontal:</h4>
+            <ul style="color: #155724; margin-bottom: 0;">
+                <li><strong>og:image:width="1200"</strong> & <strong>og:image:height="630"</strong> - Menentukan rasio horizontal (1.91:1)</li>
+                <li><strong>og:image:type="image/jpeg"</strong> - Spesifikasi format gambar</li>
+                <li><strong>og:image:secure_url</strong> - URL alternatif untuk HTTPS</li>
+                <li><strong>thumbnail meta</strong> - Backup untuk platform lain</li>
+            </ul>
+            <p style="color: #155724; margin-top: 10px; margin-bottom: 0;"><strong>Hasil:</strong> Facebook akan menampilkan thumbnail dalam format horizontal/landscape, bukan vertikal/portrait!</p>
         </div>
     </div>
 </body>
