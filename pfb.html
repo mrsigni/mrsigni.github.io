@@ -9,16 +9,30 @@
     <meta property="og:description" content='"Ya.. Kmi sah brcerai pda 2 bulan lalu.."- Allahu akhirnya Bekas suami akhirnya dedah punca ceraik Mas Idayu. 😭... Lihat Lagi' />
     <meta property="og:image" content="https://radarindramayu.disway.id/upload/8880f469970192c71ec4d34096421754.jpeg" />
     <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image:height" content="1200" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:url" content="https://suriatv.com/berita-terkini" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="SURIATV.COM" />
     <meta property="fb:app_id" content="123456789" />
     
-    <!-- Alternative untuk memastikan format horizontal -->
+    <!-- Meta tags tambahan untuk mencegah cropping -->
     <meta property="og:image:secure_url" content="https://radarindramayu.disway.id/upload/8880f469970192c71ec4d34096421754.jpeg" />
+    <meta property="og:image:alt" content="Berita terkini tentang perceraian" />
     <meta name="thumbnail" content="https://radarindramayu.disway.id/upload/8880f469970192c71ec4d34096421754.jpeg" />
+    
+    <!-- Multiple image sizes untuk Facebook -->
+    <meta property="og:image" content="https://radarindramayu.disway.id/upload/8880f469970192c71ec4d34096421754.jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    
+    <meta property="og:image" content="https://radarindramayu.disway.id/upload/8880f469970192c71ec4d34096421754.jpeg" />
+    <meta property="og:image:width" content="1080" />
+    <meta property="og:image:height" content="1080" />
+    
+    <meta property="og:image" content="https://radarindramayu.disway.id/upload/8880f469970192c71ec4d34096421754.jpeg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -181,15 +195,25 @@
             • og:type - Jenis kandungan (article)
         </div>
         
-        <div style="margin-top: 30px; padding: 20px; background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 6px;">
-            <h4 style="color: #155724; margin-top: 0;">✅ Preview Format Horizontal:</h4>
-            <ul style="color: #155724; margin-bottom: 0;">
-                <li><strong>og:image:width="1200"</strong> & <strong>og:image:height="630"</strong> - Menentukan rasio horizontal (1.91:1)</li>
-                <li><strong>og:image:type="image/jpeg"</strong> - Spesifikasi format gambar</li>
-                <li><strong>og:image:secure_url</strong> - URL alternatif untuk HTTPS</li>
-                <li><strong>thumbnail meta</strong> - Backup untuk platform lain</li>
+        <div style="margin-top: 30px; padding: 20px; background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 6px;">
+            <h4 style="color: #8a6d3b; margin-top: 0;">⚠️ Solusi untuk Gambar Tidak Terpotong:</h4>
+            <ul style="color: #8a6d3b;">
+                <li><strong>Rasio 1:1 (Square)</strong> - Menggunakan 1200x1200px untuk mencegah cropping</li>
+                <li><strong>Multiple image sizes</strong> - Facebook akan pilih yang terbaik</li>
+                <li><strong>og:image:alt</strong> - Deskripsi gambar untuk accessibility</li>
             </ul>
-            <p style="color: #155724; margin-top: 10px; margin-bottom: 0;"><strong>Hasil:</strong> Facebook akan menampilkan thumbnail dalam format horizontal/landscape, bukan vertikal/portrait!</p>
+            <p style="color: #8a6d3b; margin-bottom: 0;"><strong>Catatan:</strong> Jika masih terpotong, kemungkinan gambar asli memiliki rasio yang tidak standard. Solusi terbaik adalah membuat ulang gambar dengan rasio 1:1 (square) atau 1.91:1 (landscape).</p>
+        </div>
+        
+        <div style="margin-top: 20px; padding: 20px; background-color: #d1ecf1; border: 1px solid #bee5eb; border-radius: 6px;">
+            <h4 style="color: #0c5460; margin-top: 0;">🔧 Langkah Debugging:</h4>
+            <ol style="color: #0c5460; margin-bottom: 0;">
+                <li>Upload halaman HTML ini ke server</li>
+                <li>Test di <a href="https://developers.facebook.com/tools/debug/" target="_blank" style="color: #0c5460;">Facebook Sharing Debugger</a></li>
+                <li>Klik "Scrape Again" untuk refresh cache</li>
+                <li>Lihat "Image Preview" section untuk melihat bagaimana Facebook memproses gambar</li>
+                <li>Jika masih terpotong, coba resize gambar ke 1200x1200px atau 1200x630px</li>
+            </ol>
         </div>
     </div>
 </body>
